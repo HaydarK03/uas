@@ -1,0 +1,771 @@
+# The configurations that used for the recording, feel free to edit them
+config:
+
+  # Specify a command to be executed
+  # like `/bin/bash -l`, `ls`, or any other commands
+  # the default is bash for Linux
+  # or powershell.exe for Windows
+  command: powershell.exe
+  
+  # Specify the current working directory path
+  # the default is the current working directory path
+  cwd: C:\Windows\System32
+  
+  # Export additional ENV variables
+  env:
+    recording: true
+  
+  # Explicitly set the number of columns
+  # or use `auto` to take the current
+  # number of columns of your shell
+  cols: 168
+  
+  # Explicitly set the number of rows
+  # or use `auto` to take the current
+  # number of rows of your shell
+  rows: 43
+  
+  # Amount of times to repeat GIF
+  # If value is -1, play once
+  # If value is 0, loop indefinitely
+  # If value is a positive number, loop n times
+  repeat: 0
+  
+  # Quality
+  # 1 - 100
+  quality: 100
+  
+  # Delay between frames in ms
+  # If the value is `auto` use the actual recording delays
+  frameDelay: auto
+  
+  # Maximum delay between frames in ms
+  # Ignored if the `frameDelay` isn't set to `auto`
+  # Set to `auto` to prevent limiting the max idle time
+  maxIdleTime: 2000
+  
+  # The surrounding frame box
+  # The `type` can be null, window, floating, or solid`
+  # To hide the title use the value null
+  # Don't forget to add a backgroundColor style with a null as type
+  frameBox:
+    type: floating
+    title: Terminalizer
+    style:
+      border: 0px black solid
+      # boxShadow: none
+      # margin: 0px
+  
+  # Add a watermark image to the rendered gif
+  # You need to specify an absolute path for
+  # the image on your machine or a URL, and you can also
+  # add your own CSS styles
+  watermark:
+    imagePath: null
+    style:
+      position: absolute
+      right: 15px
+      bottom: 15px
+      width: 100px
+      opacity: 0.9
+  
+  # Cursor style can be one of
+  # `block`, `underline`, or `bar`
+  cursorStyle: block
+  
+  # Font family
+  # You can use any font that is installed on your machine
+  # in CSS-like syntax
+  fontFamily: "Monaco, Lucida Console, Ubuntu Mono, Monospace"
+  
+  # The size of the font
+  fontSize: 12
+  
+  # The height of lines
+  lineHeight: 1
+  
+  # The spacing between letters
+  letterSpacing: 0
+  
+  # Theme
+  theme:
+    background: "transparent"
+    foreground: "#afafaf"
+    cursor: "#c7c7c7"
+    black: "#232628"
+    red: "#fc4384"
+    green: "#b3e33b"
+    yellow: "#ffa727"
+    blue: "#75dff2"
+    magenta: "#ae89fe"
+    cyan: "#708387"
+    white: "#d5d5d0"
+    brightBlack: "#626566"
+    brightRed: "#ff7fac"
+    brightGreen: "#c8ed71"
+    brightYellow: "#ebdf86"
+    brightBlue: "#75dff2"
+    brightMagenta: "#ae89fe"
+    brightCyan: "#b1c6ca"
+    brightWhite: "#f9f9f4"
+  
+# Records, feel free to edit them
+records:
+  - delay: 1622
+    content: "\e[?9001h\e[?1004h"
+  - delay: 474
+    content: "\e[?25l\e[2J\e[m\e[H\e]0;Administrator: C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\powershell.exe\a\e[?25h"
+  - delay: 28
+    content: "\e[?25lWindows PowerShell\r\nCopyright (C) Microsoft Corporation. All rights reserved.\e[4;1HInstall the latest PowerShell for new features and improvements! https://aka.ms/PSWindows\e[?25h"
+  - delay: 10
+    content: "\e[?25l\e[6;1H\e[?25h"
+  - delay: 1816
+    content: 'PS C:\Windows\System32> '
+  - delay: 133
+    content: "\e[?25l"
+  - delay: 8
+    content: "\e[93mmys\e[?25h"
+  - delay: 203
+    content: "\e[m\e[?25l"
+  - delay: 18
+    content: "\e[93m\e[6;25Hmysq\e[?25h"
+  - delay: 308
+    content: "\e[m\e[?25l"
+  - delay: 23
+    content: "\e[93m\e[6;25Hmysql\e[?25h"
+  - delay: 3574
+    content: "\e[m\e[?25l"
+  - delay: 25
+    content: "\e[93m\e[6;25Hmysql \e[?25h"
+  - delay: 341
+    content: "\e[m\e[?25l"
+  - delay: 11
+    content: "\e[93m\e[6;25Hmysql \e[37m-\e[?25h"
+  - delay: 1280
+    content: "\e[m\e[?25l"
+  - delay: 12
+    content: "\e[93m\e[6;25Hmysql \e[90m-u\e[?25h"
+  - delay: 333
+    content: "\e[m\e[?25l"
+  - delay: 39
+    content: "\e[93m\e[6;25Hmysql \e[90m-u \e[?25h"
+  - delay: 247
+    content: "\e[m\e[?25l"
+  - delay: 22
+    content: "\e[93m\e[6;25Hmysql \e[90m-u \e[37mr\e[?25h"
+  - delay: 271
+    content: "\e[m\e[?25l"
+  - delay: 18
+    content: "\e[93m\e[6;25Hmysql \e[90m-u \e[37mro\e[?25h"
+  - delay: 121
+    content: "\e[m\e[?25l"
+  - delay: 23
+    content: "\e[93m\e[6;25Hmysql \e[90m-u \e[37mroo\e[?25h"
+  - delay: 197
+    content: "\e[m\e[?25l"
+  - delay: 12
+    content: "\e[93m\e[6;25Hmysql \e[90m-u \e[37mroot\e[?25h"
+  - delay: 203
+    content: "\e[m\e[?25l"
+  - delay: 21
+    content: "\e[93m\e[6;25Hmysql \e[90m-u \e[37mroot \e[?25h"
+  - delay: 402
+    content: "\e[m\e[?25l"
+  - delay: 15
+    content: "\e[93m\e[6;25Hmysql \e[90m-u \e[37mroot -\e[?25h"
+  - delay: 427
+    content: "\e[m\e[?25l"
+  - delay: 23
+    content: "\e[93m\e[6;25Hmysql \e[90m-u \e[37mroot \e[90m-p\e[?25h"
+  - delay: 1124
+    content: "\e[m"
+  - delay: 14
+    content: "\r\n"
+  - delay: 115
+    content: E
+  - delay: 10
+    content: 'nter password: '
+  - delay: 1425
+    content: '*'
+  - delay: 358
+    content: '*'
+  - delay: 373
+    content: '*'
+  - delay: 640
+    content: '*'
+  - delay: 277
+    content: '*'
+  - delay: 477
+    content: '*'
+  - delay: 1223
+    content: "\r\n"
+  - delay: 127
+    content: Welcome to the MariaDB monitor.  Commands end with ; or \g.
+  - delay: 13
+    content: "\e[?25l\r\nYour MariaDB connection id is 15\r\nServer version: 12.2.1-MariaDB MariaDB Server\e[12;1HCopyright (c) 2000, 2018, Oracle, MariaDB Corporation Ab and others.\e[14;1HType 'help;' or '\\h' for help. Type '\\c' to clear the current input statement.\e[16;1HMariaDB [(none)]> \e[?25h"
+  - delay: 3191
+    content: S
+  - delay: 1130
+    content: H
+  - delay: 358
+    content: O
+  - delay: 274
+    content: W
+  - delay: 682
+    content: ' '
+  - delay: 391
+    content: D
+  - delay: 141
+    content: A
+  - delay: 167
+    content: T
+  - delay: 141
+    content: A
+  - delay: 186
+    content: B
+  - delay: 128
+    content: A
+  - delay: 268
+    content: S
+  - delay: 191
+    content: E
+  - delay: 204
+    content: S
+  - delay: 2855
+    content: "\r\n"
+  - delay: 9
+    content: '    -> '
+  - delay: 5346
+    content: ;
+  - delay: 901
+    content: "\r\n"
+  - delay: 18
+    content: "+----------------------+\r\n| Database             |\r\n+----------------------+\r\n| agenda_kelas         |\r\n| information_schema   |\r\n| mysql                |\r\n| natsuchanlibrary     |\r\n| organisasi_mahasiswa |\r\n| performance_schema   |\r\n| perpustakaan         |"
+  - delay: 16
+    content: "\e[?25l\r\n| sys                  |\r\n| test                 |\r\n+----------------------+\r\n9 rows in set (0.003 sec)\e[33;1HMariaDB [(none)]> \e[?25h"
+  - delay: 7019
+    content: U
+  - delay: 616
+    content: S
+  - delay: 221
+    content: E
+  - delay: 543
+    content: ' '
+  - delay: 4204
+    content: o
+  - delay: 374
+    content: r
+  - delay: 272
+    content: g
+  - delay: 152
+    content: a
+  - delay: 165
+    content: 'n'
+  - delay: 207
+    content: i
+  - delay: 156
+    content: s
+  - delay: 241
+    content: a
+  - delay: 273
+    content: s
+  - delay: 220
+    content: i
+  - delay: 1419
+    content: _
+  - delay: 656
+    content: m
+  - delay: 167
+    content: a
+  - delay: 115
+    content: h
+  - delay: 141
+    content: a
+  - delay: 246
+    content: s
+  - delay: 159
+    content: i
+  - delay: 141
+    content: s
+  - delay: 361
+    content: w
+  - delay: 166
+    content: a
+  - delay: 1414
+    content: ':'
+  - delay: 1396
+    content: "\b \b"
+  - delay: 434
+    content: ;
+  - delay: 1671
+    content: "\r\n"
+  - delay: 12
+    content: "Database changed\r\nMariaDB [organisasi_mahasiswa]> "
+  - delay: 6207
+    content: D
+  - delay: 250
+    content: E
+  - delay: 281
+    content: S
+  - delay: 973
+    content: C
+  - delay: 5523
+    content: ' '
+  - delay: 5524
+    content: "\b \b"
+  - delay: 168
+    content: "\b \b"
+  - delay: 168
+    content: "\b \b"
+  - delay: 391
+    content: "\b \b"
+  - delay: 533
+    content: "\b \b"
+  - delay: 801
+    content: S
+  - delay: 2035
+    content: E
+  - delay: 229
+    content: L
+  - delay: 155
+    content: E
+  - delay: 422
+    content: C
+  - delay: 255
+    content: T
+  - delay: 352
+    content: ' '
+  - delay: 1432
+    content: '*'
+  - delay: 803
+    content: ' '
+  - delay: 435
+    content: F
+  - delay: 213
+    content: R
+  - delay: 390
+    content: O
+  - delay: 315
+    content: M
+  - delay: 518
+    content: ' '
+  - delay: 1607
+    content: m
+  - delay: 154
+    content: a
+  - delay: 180
+    content: h
+  - delay: 123
+    content: a
+  - delay: 300
+    content: s
+  - delay: 193
+    content: i
+  - delay: 167
+    content: s
+  - delay: 980
+    content: w
+  - delay: 221
+    content: a
+  - delay: 3490
+    content: ;
+  - delay: 2523
+    content: "\r\n"
+  - delay: 10
+    content: "+---------+------+-------------+----------+\r\n| nim     | nama | jurusan     | angkatan |\r\n+---------+------+-------------+----------+\r\n| 2023001 | Alif | Informatika |     2023 |\r\n| 2023002 | Alif | Informatika |     2023 |\r\n| 2023025 | Alif | Kedokteran  |     2023 |\r\n+---------+------+-------------+----------+\r\n3 rows in set (0.001 sec)\r\n"
+  - delay: 14
+    content: "\nMariaDB [organisasi_mahasiswa]>\e[1C"
+  - delay: 4455
+    content: S
+  - delay: 1263
+    content: E
+  - delay: 261
+    content: L
+  - delay: 149
+    content: E
+  - delay: 312
+    content: C
+  - delay: 392
+    content: T
+  - delay: 7497
+    content: "\b \b"
+  - delay: 214
+    content: "\b \b"
+  - delay: 228
+    content: "\b \b"
+  - delay: 153
+    content: "\b \b"
+  - delay: 156
+    content: "\b \b"
+  - delay: 428
+    content: "\b \b"
+  - delay: 19841
+    content: U
+  - delay: 315
+    content: P
+  - delay: 382
+    content: D
+  - delay: 121
+    content: A
+  - delay: 168
+    content: T
+  - delay: 248
+    content: E
+  - delay: 351
+    content: ' '
+  - delay: 5095
+    content: '['
+  - delay: 26464
+    content: "\b \b"
+  - delay: 505
+    content: "\b \b"
+  - delay: 8066
+    content: ' '
+  - delay: 3878
+    content: '['
+  - delay: 6182
+    content: "\b \b"
+  - delay: 386
+    content: 'N'
+  - delay: 156
+    content: A
+  - delay: 225
+    content: M
+  - delay: 628
+    content: "\b \b"
+  - delay: 157
+    content: "\b \b"
+  - delay: 160
+    content: "\b \b"
+  - delay: 5132
+    content: 'n'
+  - delay: 483
+    content: a
+  - delay: 270
+    content: m
+  - delay: 147
+    content: a
+  - delay: 6382
+    content: ' '
+  - delay: 300
+    content: s
+  - delay: 261
+    content: e
+  - delay: 436
+    content: t
+  - delay: 377
+    content: ' '
+  - delay: 2247
+    content: "\b \b"
+  - delay: 167
+    content: "\b \b"
+  - delay: 165
+    content: "\b \b"
+  - delay: 172
+    content: "\b \b"
+  - delay: 5107
+    content: "\b \b"
+  - delay: 1838
+    content: "\b \b"
+  - delay: 500
+    content: "\b \b"
+  - delay: 38
+    content: "\b \b"
+  - delay: 23
+    content: "\b \b"
+  - delay: 29
+    content: "\b \b"
+  - delay: 30
+    content: "\b \b"
+  - delay: 31
+    content: "\b \b"
+  - delay: 31
+    content: "\b \b"
+  - delay: 28
+    content: "\b \b"
+  - delay: 36
+    content: "\b \b"
+  - delay: 25
+    content: "\b \b"
+  - delay: 11115
+    content: M
+  - delay: 2568
+    content: "\b \b"
+  - delay: 2380
+    content: S
+  - delay: 803
+    content: E
+  - delay: 757
+    content: L
+  - delay: 241
+    content: E
+  - delay: 257
+    content: C
+  - delay: 257
+    content: T
+  - delay: 394
+    content: ' '
+  - delay: 1660
+    content: '*'
+  - delay: 935
+    content: ' '
+  - delay: 728
+    content: F
+  - delay: 197
+    content: R
+  - delay: 410
+    content: O
+  - delay: 299
+    content: M
+  - delay: 294
+    content: ' '
+  - delay: 1043
+    content: o
+  - delay: 379
+    content: r
+  - delay: 306
+    content: g
+  - delay: 202
+    content: a
+  - delay: 289
+    content: 'n'
+  - delay: 2515
+    content: i
+  - delay: 1155
+    content: s
+  - delay: 360
+    content: a
+  - delay: 358
+    content: s
+  - delay: 651
+    content: i
+  - delay: 2163
+    content: ':'
+  - delay: 1149
+    content: "\b \b"
+  - delay: 418
+    content: ;
+  - delay: 61924
+    content: "\r\n+---------------+-----------------+------------------+---------+\r\n| id_organisasi | nama_organisasi | jenis_organisasi | jabatan |\r\n+---------------+-----------------+------------------+---------+"
+  - delay: 7
+    content: "\r\n|             1 | Mapala          | UKM              | Anggota |\r\n+---------------+-----------------+------------------+---------+\r\n1 row in set (0.004 sec)\r\n"
+  - delay: 10
+    content: "\nMariaDB [organisasi_mahasiswa]>\e[1C"
+  - delay: 11839
+    content: e
+  - delay: 608
+    content: x
+  - delay: 816
+    content: i
+  - delay: 285
+    content: t
+  - delay: 84605
+    content: "\b \b"
+  - delay: 192
+    content: "\b \b"
+  - delay: 170
+    content: "\b \b"
+  - delay: 338
+    content: "\b \b"
+  - delay: 1032
+    content: D
+  - delay: 283
+    content: E
+  - delay: 284
+    content: S
+  - delay: 664
+    content: C
+  - delay: 240
+    content: ' '
+  - delay: 306
+    content: T
+  - delay: 169
+    content: A
+  - delay: 178
+    content: B
+  - delay: 371
+    content: L
+  - delay: 232
+    content: E
+  - delay: 448
+    content: S
+  - delay: 3019
+    content: "\b \b"
+  - delay: 501
+    content: "\b \b"
+  - delay: 28
+    content: "\b \b"
+  - delay: 32
+    content: "\b \b"
+  - delay: 30
+    content: "\b \b"
+  - delay: 348
+    content: "\b \b"
+  - delay: 2642
+    content: o
+  - delay: 567
+    content: r
+  - delay: 437
+    content: g
+  - delay: 160
+    content: a
+  - delay: 149
+    content: 'n'
+  - delay: 204
+    content: i
+  - delay: 116
+    content: s
+  - delay: 231
+    content: a
+  - delay: 276
+    content: s
+  - delay: 184
+    content: i
+  - delay: 1879
+    content: _
+  - delay: 795
+    content: m
+  - delay: 160
+    content: a
+  - delay: 118
+    content: h
+  - delay: 143
+    content: a
+  - delay: 259
+    content: s
+  - delay: 160
+    content: i
+  - delay: 646
+    content: s
+  - delay: 298
+    content: w
+  - delay: 150
+    content: a
+  - delay: 490
+    content: ;
+  - delay: 2028
+    content: "\r\n"
+  - delay: 61
+    content: >-
+      ERROR 1146 (42S02): Table 'organisasi_mahasiswa.organisasi_mahasiswa'
+      doesn't exist
+  - delay: 9
+    content: "\r\nMariaDB [organisasi_mahasiswa]>\e[1C"
+  - delay: 10129
+    content: D
+  - delay: 202
+    content: E
+  - delay: 172
+    content: S
+  - delay: 633
+    content: C
+  - delay: 9521
+    content: ' '
+  - delay: 760
+    content: m
+  - delay: 130
+    content: a
+  - delay: 150
+    content: h
+  - delay: 130
+    content: a
+  - delay: 252
+    content: s
+  - delay: 166
+    content: i
+  - delay: 124
+    content: s
+  - delay: 587
+    content: w
+  - delay: 176
+    content: a
+  - delay: 1660
+    content: ;
+  - delay: 1791
+    content: "\r\n"
+  - delay: 61
+    content: "+----------+--------------+------+-----+---------+-------+\r\n| Field    | Type         | Null | Key | Default | Extra |"
+  - delay: 7
+    content: "\r\n+----------+--------------+------+-----+---------+-------+"
+  - delay: 5
+    content: "\r\n"
+  - delay: 5
+    content: '| nim      | varchar(15)  | NO   | PRI | NULL    |       |'
+  - delay: 7
+    content: "\r\n| nama     | varchar(100) | NO   |     | NULL    |       |\r\n|\e[1Cjurusan  | varchar(50)  | YES  |     | NULL    |       |\r\n| angkatan | int(4)       | YES  |     | NULL    |       |\r\n+----------+--------------+------+-----+---------+-------+\r\n4 rows in set (0.067 sec)\r\n"
+  - delay: 11
+    content: "\nMariaDB [organisasi_mahasiswa]>\e[1C"
+  - delay: 22513
+    content: D
+  - delay: 983
+    content: E
+  - delay: 206
+    content: S
+  - delay: 291
+    content: C
+  - delay: 1592
+    content: ' '
+  - delay: 787
+    content: o
+  - delay: 288
+    content: r
+  - delay: 424
+    content: g
+  - delay: 171
+    content: a
+  - delay: 183
+    content: 'n'
+  - delay: 199
+    content: i
+  - delay: 134
+    content: s
+  - delay: 243
+    content: a
+  - delay: 335
+    content: s
+  - delay: 984
+    content: i
+  - delay: 3812
+    content: ;
+  - delay: 702
+    content: "\r\n"
+  - delay: 57
+    content: "+------------------+--------------+------+-----+---------+----------------+\r\n| Field            | Type         | Null | Key | Default | Extra          |\r\n+------------------+--------------+------+-----+---------+----------------+"
+  - delay: 5
+    content: "\r\n| id_organisasi    | int(11)      | NO   | PRI | NULL    | auto_increment |\r\n| nama_organisasi  | varchar(105) | NO   |     | NULL    |                |\r\n| jenis_organisasi | varchar(120) | NO   |     | NULL    |                |\r\n| jabatan          | varchar(55)  | NO   |     | NULL    |                |\r\n+------------------+--------------+------+-----+---------+----------------+\r\n4 rows in set (0.063 sec)\r\n"
+  - delay: 14
+    content: "\nMariaDB [organisasi_mahasiswa]>\e[1C"
+  - delay: 17434
+    content: e
+  - delay: 1047
+    content: x
+  - delay: 321
+    content: i
+  - delay: 426
+    content: t
+  - delay: 2124
+    content: "\r\nBye"
+  - delay: 18
+    content: "\r\n"
+  - delay: 89
+    content: 'PS C:\Windows\System32> '
+  - delay: 799
+    content: "\e[?25l"
+  - delay: 18
+    content: "\e[93me\e[?25h"
+  - delay: 261
+    content: "\e[m\e[?25l"
+  - delay: 12
+    content: "\e[93m\bex\e[?25h"
+  - delay: 363
+    content: "\e[m\e[?25l"
+  - delay: 22
+    content: "\e[93m\e[43;25Hexi\e[?25h"
+  - delay: 274
+    content: "\e[m\e[?25l"
+  - delay: 12
+    content: "\e[92m\e[43;25Hexit\e[?25h"
+  - delay: 1335
+    content: "\e[m"
+  - delay: 24
+    content: "\r\n"
