@@ -1,0 +1,585 @@
+# The configurations that used for the recording, feel free to edit them
+config:
+
+  # Specify a command to be executed
+  # like `/bin/bash -l`, `ls`, or any other commands
+  # the default is bash for Linux
+  # or powershell.exe for Windows
+  command: powershell.exe
+  
+  # Specify the current working directory path
+  # the default is the current working directory path
+  cwd: C:\Users\laudina am
+  
+  # Export additional ENV variables
+  env:
+    recording: true
+  
+  # Explicitly set the number of columns
+  # or use `auto` to take the current
+  # number of columns of your shell
+  cols: 133
+  
+  # Explicitly set the number of rows
+  # or use `auto` to take the current
+  # number of rows of your shell
+  rows: 37
+  
+  # Amount of times to repeat GIF
+  # If value is -1, play once
+  # If value is 0, loop indefinitely
+  # If value is a positive number, loop n times
+  repeat: 0
+  
+  # Quality
+  # 1 - 100
+  quality: 100
+  
+  # Delay between frames in ms
+  # If the value is `auto` use the actual recording delays
+  frameDelay: auto
+  
+  # Maximum delay between frames in ms
+  # Ignored if the `frameDelay` isn't set to `auto`
+  # Set to `auto` to prevent limiting the max idle time
+  maxIdleTime: 2000
+  
+  # The surrounding frame box
+  # The `type` can be null, window, floating, or solid`
+  # To hide the title use the value null
+  # Don't forget to add a backgroundColor style with a null as type
+  frameBox:
+    type: floating
+    title: Terminalizer
+    style:
+      border: 0px black solid
+      # boxShadow: none
+      # margin: 0px
+  
+  # Add a watermark image to the rendered gif
+  # You need to specify an absolute path for
+  # the image on your machine or a URL, and you can also
+  # add your own CSS styles
+  watermark:
+    imagePath: null
+    style:
+      position: absolute
+      right: 15px
+      bottom: 15px
+      width: 100px
+      opacity: 0.9
+  
+  # Cursor style can be one of
+  # `block`, `underline`, or `bar`
+  cursorStyle: block
+  
+  # Font family
+  # You can use any font that is installed on your machine
+  # in CSS-like syntax
+  fontFamily: "Monaco, Lucida Console, Ubuntu Mono, Monospace"
+  
+  # The size of the font
+  fontSize: 12
+  
+  # The height of lines
+  lineHeight: 1
+  
+  # The spacing between letters
+  letterSpacing: 0
+  
+  # Theme
+  theme:
+    background: "transparent"
+    foreground: "#afafaf"
+    cursor: "#c7c7c7"
+    black: "#232628"
+    red: "#fc4384"
+    green: "#b3e33b"
+    yellow: "#ffa727"
+    blue: "#75dff2"
+    magenta: "#ae89fe"
+    cyan: "#708387"
+    white: "#d5d5d0"
+    brightBlack: "#626566"
+    brightRed: "#ff7fac"
+    brightGreen: "#c8ed71"
+    brightYellow: "#ebdf86"
+    brightBlue: "#75dff2"
+    brightMagenta: "#ae89fe"
+    brightCyan: "#b1c6ca"
+    brightWhite: "#f9f9f4"
+  
+# Records, feel free to edit them
+records:
+  - delay: 1310
+    content: "\e[?9001h\e[?1004h"
+  - delay: 197
+    content: "\e[?25l\e[2J\e[m\e[HWindows PowerShell\r\nCopyright (C) Microsoft Corporation. All rights reserved.\e[4;1HInstall the latest PowerShell for new features and improvements! https://aka.ms/PSWindows\e]0;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe\a\e[?25h\e[?25l\e[6;1H\e[?25h"
+  - delay: 235
+    content: 'PS C:\Users\laudina am> '
+  - delay: 3445
+    content: "\e[?25l"
+  - delay: 17
+    content: "\e[93mm\e[?25h"
+  - delay: 116
+    content: "\e[m\e[?25l"
+  - delay: 16
+    content: "\e[93m\bmy\e[?25h"
+  - delay: 218
+    content: "\e[m\e[?25l"
+  - delay: 10
+    content: "\e[93m\e[6;25Hmys\e[?25h"
+  - delay: 198
+    content: "\e[m\e[?25l"
+  - delay: 9
+    content: "\e[93m\e[6;25Hmysq\e[?25h"
+  - delay: 227
+    content: "\e[m\e[?25l"
+  - delay: 11
+    content: "\e[93m\e[6;25Hmysql\e[?25h"
+  - delay: 305
+    content: "\e[m\e[?25l"
+  - delay: 17
+    content: "\e[93m\e[6;25Hmysql \e[?25h"
+  - delay: 554
+    content: "\e[m\e[?25l"
+  - delay: 36
+    content: "\e[93m\e[6;25Hmysql \e[37mu\e[?25h"
+  - delay: 228
+    content: "\e[m\e[?25l"
+  - delay: 11
+    content: "\e[93m\e[6;25Hmysql \e[37mu-\e[?25h"
+  - delay: 647
+    content: "\e[m\e[?25l"
+  - delay: 19
+    content: "\e[93m\e[6;25Hmysql \e[37mu-r\e[?25h"
+  - delay: 195
+    content: "\e[m\e[?25l"
+  - delay: 13
+    content: "\e[93m\e[6;25Hmysql \e[37mu-ro\e[?25h"
+  - delay: 119
+    content: "\e[m\e[?25l"
+  - delay: 15
+    content: "\e[93m\e[6;25Hmysql \e[37mu-roo\e[?25h"
+  - delay: 278
+    content: "\e[m\e[?25l"
+  - delay: 17
+    content: "\e[93m\e[6;25Hmysql \e[37mu-root\e[?25h"
+  - delay: 544
+    content: "\e[m\e[?25l"
+  - delay: 15
+    content: "\e[93m\e[6;25Hmysql \e[37mu-roo \b\e[?25h"
+  - delay: 346
+    content: "\e[m\e[?25l"
+  - delay: 22
+    content: "\e[93m\e[6;25Hmysql \e[37mu-ro \b\e[?25h"
+  - delay: 123
+    content: "\e[m\e[?25l"
+  - delay: 11
+    content: "\e[93m\e[6;25Hmysql \e[37mu-r \b\e[?25h"
+  - delay: 132
+    content: "\e[m\e[?25l"
+  - delay: 17
+    content: "\e[93m\e[6;25Hmysql \e[37mu- \b\e[?25h"
+  - delay: 125
+    content: "\e[m\e[?25l"
+  - delay: 17
+    content: "\e[93m\e[6;25Hmysql \e[37mu \b\e[?25h"
+  - delay: 115
+    content: "\e[m\e[?25l"
+  - delay: 10
+    content: "\e[93m\e[6;25Hmysql  \b\e[?25h"
+  - delay: 667
+    content: "\e[m\e[?25l"
+  - delay: 12
+    content: "\e[93m\e[6;25Hmysql \e[37m-\e[?25h"
+  - delay: 319
+    content: "\e[m\e[?25l"
+  - delay: 14
+    content: "\e[93m\e[6;25Hmysql \e[90m-u\e[?25h"
+  - delay: 237
+    content: "\e[m\e[?25l"
+  - delay: 22
+    content: "\e[93m\e[6;25Hmysql \e[90m-u \e[?25h"
+  - delay: 250
+    content: "\e[m\e[?25l"
+  - delay: 16
+    content: "\e[93m\e[6;25Hmysql \e[90m-u \e[37mr\e[?25h"
+  - delay: 141
+    content: "\e[m\e[?25l"
+  - delay: 16
+    content: "\e[93m\e[6;25Hmysql \e[90m-u \e[37mro\e[?25h"
+  - delay: 115
+    content: "\e[m\e[?25l"
+  - delay: 10
+    content: "\e[93m\e[6;25Hmysql \e[90m-u \e[37mroo\e[?25h"
+  - delay: 268
+    content: "\e[m\e[?25l"
+  - delay: 17
+    content: "\e[93m\e[6;25Hmysql \e[90m-u \e[37mroot\e[?25h"
+  - delay: 558
+    content: "\e[m\e[?25l"
+  - delay: 23
+    content: "\e[93m\e[6;25Hmysql \e[90m-u \e[37mroot \e[?25h"
+  - delay: 408
+    content: "\e[m\e[?25l"
+  - delay: 14
+    content: "\e[93m\e[6;25Hmysql \e[90m-u \e[37mroot -\e[?25h"
+  - delay: 303
+    content: "\e[m\e[?25l"
+  - delay: 26
+    content: "\e[93m\e[6;25Hmysql \e[90m-u \e[37mroot \e[90m-p\e[?25h"
+  - delay: 843
+    content: "\e[m"
+  - delay: 24
+    content: "\r\n"
+  - delay: 81
+    content: En
+  - delay: 16
+    content: 'ter password: '
+  - delay: 1026
+    content: '*'
+  - delay: 367
+    content: '*'
+  - delay: 318
+    content: '*'
+  - delay: 249
+    content: '*'
+  - delay: 235
+    content: '*'
+  - delay: 282
+    content: '*'
+  - delay: 233
+    content: '*'
+  - delay: 586
+    content: '*'
+  - delay: 303
+    content: '*'
+  - delay: 945
+    content: "\r\n"
+  - delay: 169
+    content: Welcome to the MariaDB monitor.  Commands end with ; or \g.
+  - delay: 11
+    content: "\r\n"
+  - delay: 18
+    content: "Your MariaDB connection id is 23\r\nServer version: 12.1.2-MariaDB MariaDB Server\r\n"
+  - delay: 16
+    content: "\e[?25l\r\nCopyright (c) 2000, 2018, Oracle, MariaDB Corporation Ab and others.\e[14;1HType 'help;' or '\\h' for help. Type '\\c' to clear the current input statement.\e[16;1HMariaDB [(none)]> \e[?25h"
+  - delay: 5169
+    content: S
+  - delay: 308
+    content: H
+  - delay: 237
+    content: O
+  - delay: 274
+    content: W
+  - delay: 479
+    content: ' '
+  - delay: 694
+    content: D
+  - delay: 3868
+    content: A
+  - delay: 656
+    content: T
+  - delay: 326
+    content: A
+  - delay: 3352
+    content: B
+  - delay: 210
+    content: A
+  - delay: 520
+    content: S
+  - delay: 284
+    content: E
+  - delay: 647
+    content: ' '
+  - delay: 2078
+    content: m
+  - delay: 234
+    content: u
+  - delay: 211
+    content: s
+  - delay: 190
+    content: i
+  - delay: 194
+    content: k
+  - delay: 1574
+    content: "\b \b"
+  - delay: 503
+    content: "\b \b"
+  - delay: 30
+    content: "\b \b"
+  - delay: 31
+    content: "\b \b"
+  - delay: 29
+    content: "\b \b"
+  - delay: 30
+    content: "\b \b"
+  - delay: 31
+    content: "\b \b"
+  - delay: 29
+    content: "\b \b"
+  - delay: 29
+    content: "\b \b"
+  - delay: 32
+    content: "\b \b"
+  - delay: 31
+    content: "\b \b"
+  - delay: 32
+    content: "\b \b"
+  - delay: 26
+    content: "\b \b"
+  - delay: 31
+    content: "\b \b"
+  - delay: 29
+    content: "\b \b"
+  - delay: 31
+    content: "\b \b"
+  - delay: 370
+    content: "\b \b"
+  - delay: 178
+    content: "\b \b"
+  - delay: 135
+    content: "\b \b"
+  - delay: 790
+    content: U
+  - delay: 181
+    content: S
+  - delay: 207
+    content: E
+  - delay: 282
+    content: ' '
+  - delay: 794
+    content: m
+  - delay: 222
+    content: u
+  - delay: 119
+    content: s
+  - delay: 110
+    content: i
+  - delay: 184
+    content: k
+  - delay: 658
+    content: ;
+  - delay: 462
+    content: "\r\n"
+  - delay: 16
+    content: Database changed
+  - delay: 13
+    content: "\r\nMariaDB [musik]> "
+  - delay: 1573
+    content: S
+  - delay: 177
+    content: H
+  - delay: 220
+    content: O
+  - delay: 105
+    content: W
+  - delay: 304
+    content: ' '
+  - delay: 304
+    content: D
+  - delay: 272
+    content: A
+  - delay: 121
+    content: T
+  - delay: 142
+    content: A
+  - delay: 196
+    content: B
+  - delay: 76
+    content: A
+  - delay: 225
+    content: S
+  - delay: 177
+    content: E
+  - delay: 235
+    content: ' '
+  - delay: 476
+    content: m
+  - delay: 203
+    content: u
+  - delay: 127
+    content: s
+  - delay: 110
+    content: i
+  - delay: 224
+    content: k
+  - delay: 589
+    content: ;
+  - delay: 541
+    content: "\r\n"
+  - delay: 11
+    content: ERROR 1064 (42000)
+  - delay: 16
+    content: ": You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'DATABASE musik' at line 1\r\nMariaDB [musik]> "
+  - delay: 7723
+    content: S
+  - delay: 860
+    content: H
+  - delay: 236
+    content: O
+  - delay: 185
+    content: W
+  - delay: 431
+    content: ' '
+  - delay: 648
+    content: D
+  - delay: 256
+    content: A
+  - delay: 121
+    content: T
+  - delay: 147
+    content: A
+  - delay: 471
+    content: B
+  - delay: 78
+    content: A
+  - delay: 210
+    content: S
+  - delay: 241
+    content: E
+  - delay: 209
+    content: S
+  - delay: 689
+    content: ;
+  - delay: 685
+    content: "\r\n"
+  - delay: 30
+    content: +----------------------+
+  - delay: 24
+    content: "\r\n| Database             |\r\n+----------------------+\r\n| film                 |\r\n| information_schema   |\r\n| latihan_uas          |\r\n| musik                |\r\n| mysql        "
+  - delay: 14
+    content: "        |\r\n| performance_schema   |\r\n| perpustakaan         |\r\n| perpustakaan_latihan |\r\n| sys                  |\r\n| test                 |\r\n+----------------------+\r\n10 rows in set (0.029 sec)\r\n"
+  - delay: 15
+    content: "\nMariaDB [musik]>\e[1C"
+  - delay: 11843
+    content: S
+  - delay: 1459
+    content: E
+  - delay: 131
+    content: L
+  - delay: 117
+    content: E
+  - delay: 242
+    content: C
+  - delay: 239
+    content: T
+  - delay: 1388
+    content: '*'
+  - delay: 556
+    content: F
+  - delay: 216
+    content: R
+  - delay: 251
+    content: O
+  - delay: 259
+    content: M
+  - delay: 232
+    content: ' '
+  - delay: 717
+    content: m
+  - delay: 269
+    content: u
+  - delay: 129
+    content: s
+  - delay: 142
+    content: i
+  - delay: 213
+    content: k
+  - delay: 579
+    content: ;
+  - delay: 255
+    content: "\r\n"
+  - delay: 15
+    content: "ERROR 1146 (42S02): Table 'musik.musik' doesn't exist\r\nMariaDB [musik]>\e[1C"
+  - delay: 1536
+    content: S
+  - delay: 212
+    content: E
+  - delay: 97
+    content: L
+  - delay: 85
+    content: E
+  - delay: 308
+    content: C
+  - delay: 246
+    content: T
+  - delay: 10228
+    content: '*'
+  - delay: 715
+    content: F
+  - delay: 238
+    content: R
+  - delay: 478
+    content: O
+  - delay: 901
+    content: M
+  - delay: 1130
+    content: ' '
+  - delay: 429
+    content: l
+  - delay: 168
+    content: a
+  - delay: 167
+    content: g
+  - delay: 210
+    content: u
+  - delay: 718
+    content: ;
+  - delay: 396
+    content: "\r\n"
+  - delay: 19
+    content: "+---------+----------+--------------+------------+-------------+\r\n| id_lagu | judul    | penyanyi     | genre      | tahun_rilis |\r\n+---------+----------+--------------+------------+-------------+\r\n|       1 |"
+  - delay: 6
+    content: ' XXL      | LANY         | Pop        |        2020 |'
+  - delay: 9
+    content: "\r\n|       2 | Cardigan | Taylor_Swift | Pop        |        2018 |"
+  - delay: 11
+    content: "\r\n|       3 | Gone     | NSYNC        | Pop        |        2000 |\r\n|\e[4C"
+  - delay: 10
+    content: '   4 | Thanks   | SEVENTEEN    | Korean_Pop |        2018 |'
+  - delay: 5
+    content: "\r\n|       5 | Atlantis | Se"
+  - delay: 7
+    content: "afret      | Pop        |        2019 |\r\n+---------+----------+--------------+------------+-------------+\r\n5 rows in set (0.018 sec)\r\n"
+  - delay: 8
+    content: "\nMariaDB [musik]>\e[1C"
+  - delay: 24294
+    content: ^D
+  - delay: 797
+    content: "\e[?25l\e[37;18H  \e[37;18H\e[?25h"
+  - delay: 2274
+    content: e
+  - delay: 631
+    content: x
+  - delay: 169
+    content: i
+  - delay: 250
+    content: t
+  - delay: 1561
+    content: "\r\nBye"
+  - delay: 20
+    content: "\r\n"
+  - delay: 32
+    content: 'PS C:\Users\laudina am> '
+  - delay: 7655
+    content: "\e[?25l"
+  - delay: 11
+    content: "\e[93me\e[?25h"
+  - delay: 512
+    content: "\e[m\e[?25l"
+  - delay: 14
+    content: "\e[93m\bex\e[?25h"
+  - delay: 192
+    content: "\e[m\e[?25l"
+  - delay: 16
+    content: "\e[93m\e[37;25Hexi\e[?25h"
+  - delay: 248
+    content: "\e[m\e[?25l"
+  - delay: 23
+    content: "\e[92m\e[37;25Hexit\e[?25h"
+  - delay: 1459
+    content: "\e[m"
+  - delay: 16
+    content: "\r\n"
